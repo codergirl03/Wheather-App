@@ -39,10 +39,17 @@
     justify-content: center;
     align-items: center;
 }
-select{
+.sel input {
     padding: 10px;
     border-radius: 4px;
     width: 30%;
+    border: none;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+button{
+    padding: 10px;
+    border-radius: 4px;
     border: none;
     margin-bottom: 2rem;
     margin-top: 3rem;
