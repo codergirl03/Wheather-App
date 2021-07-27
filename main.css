@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    background-image: url(./vremena-goda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.w_wrap{
+    padding: 1rem;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+    background: rgba(147, 189, 185, 0.7);
+    border-radius: 20px;
+    color: white;
+}
+.w_wrap h1{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+    align-items: center;
+}
+.w_wrap h1 span{
+    font-size: 35px;
+    margin-left: 20px;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    padding: 10px;
+    border-radius: 4px;
+    width: 30%;
+    border: none;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.wrap span{
+    font-size: 25px;
+    display: flex;
+}
+.about_w{
+    font-size: 25px;
+}
