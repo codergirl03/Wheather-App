@@ -12,6 +12,7 @@ let btn = document.querySelector("#btn")
 nameCount.onkeyup = (event) => {
     if(event.keyCode === 13){
         weather(event.target.value)
+        event.target.value = ""
     }
 }
 btn.onclick = () => {
@@ -19,6 +20,7 @@ btn.onclick = () => {
         wWrap.innerHTML = null
     }else{
         weather(nameCount.value)
+        nameCount.value =""
     }
 }
 
@@ -31,8 +33,8 @@ async function weather(x) {
         h1.textContent = data.sys.country+ "/"
         h1.appendChild(span)
         aboutW.textContent = data.weather[0].main
-        max.textContent = "max/" + Math.floor(data.main.temp_max -273)
-        min.textContent = "min/" + Math.floor(data.main.temp_min - 273)
+        max.innerHTML = "max/" + Math.floor(data.main.temp_max -273) + "<sup>o</sup>"
+        min.innerHTML = "min/" + Math.floor(data.main.temp_min - 273)+ "<sup>o</sup>"
         img.setAttribute("src" , ` http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
         return data
 }

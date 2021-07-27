@@ -61,3 +61,6 @@ button{
 .about_w{
     font-size: 25px;
 }
+sup{
+    margin-top: -15px;
+}
