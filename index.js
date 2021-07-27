@@ -35,7 +35,7 @@ async function weather(x) {
 
 function renderCountry(database){
     for(let i in database){
-        console.log(database[i]);
+        // console.log(database[i]);
         let option = document.createElement("option")
         option.textContent = database[i]
         option.value = i
