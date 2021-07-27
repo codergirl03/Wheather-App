@@ -25,6 +25,7 @@ btn.onclick = () => {
 }
 
 async function weather(x) {
+    try{
         let response  = await fetch ( `http://api.openweathermap.org/data/2.5/weather?q=${x}&appid=f8aadafcfd32a99c0a95c1e717e1b103` , {
             method: "GET"
         })
@@ -37,6 +38,11 @@ async function weather(x) {
         min.innerHTML = "min/" + Math.floor(data.main.temp_min - 273)+ "<sup>o</sup>"
         img.setAttribute("src" , ` http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
         return data
+    }catch(error){
+        console.log(error);
+        h1.textContent = "not found"
+    }
+       
 }
 
 
